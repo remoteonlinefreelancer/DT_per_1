@@ -1,0 +1,1587 @@
+
+@media (min-width: 1024px) and (max-width: 3760px){
+
+/* --- header --- */
+/* ------- menu -------- */
+/* menu yellow bg as well */
+.menu{
+    /* position:relative; */
+    /* grid-area:menuTxt; */
+    margin-top: -0.3%;
+    grid-column: 12/span 72;
+    grid-row:2;
+    background-image: url("../en pic/En laptop bg logo,menu and title.svg");
+    background-repeat: no-repeat; 
+    width: 100%;
+    /* background-size: 85%; */
+    transform: translate(0%,-11.5%);
+    /* background-color: brown; */
+    z-index: 5;
+    /* overflow: hidden; */
+}
+
+
+/* gray menu bg */
+.menu ul {
+grid-column:4/span3;
+background-image: url("../per pic/Laptop menu bg - Per.svg");
+background-repeat: no-repeat;
+background-size: 55%;
+gap:4.6%;
+display: flex;
+/* flex-direction: row; */
+/* flex-wrap: wrap; */
+/* align-items: center; */
+width:110%;
+height:160px;
+transform: translate(9%,-7%);
+/* background-color: aqua; */
+z-index: 20;
+
+}
+
+.menu li{
+    transform: translate(24%,2%);
+    display: flex;
+    /* gap:22px; */
+
+    /* flex:0 1 11%; */
+    z-index: 10;
+}
+
+
+/*  */
+  /* --- about company  --- */
+  .aboutImage{
+    visibility: inherit;
+    grid-column: 8 / span 15;
+    grid-row: 1 / span 6 ;
+    background-size: contain;
+    height: 103vh ;
+    width: 30vw;
+}
+
+/* animation part statistics */
+
+.yearsWork{
+    position: relative;
+
+    background-color: rgb(97, 97, 97);
+    animation: yearsWorkExAnim 4s forwards ease-in-out;
+    animation-iteration-count: 1; 
+ }
+
+/* .yearsWork.visible{
+    animation: yearsWorkExAnim 4s forwards ease-in-out !important;
+    animation-iteration-count: 1; 
+    animation-delay: 1s;
+
+} */
+ .yearsWork span:nth-child(2){
+    /* opacity: 0; */
+    text-wrap: nowrap;
+    font-size: 24px;
+    animation: numYearsWorkAnim 4s forwards ease-in-out;
+
+ }
+
+
+ .yearsWork span:nth-child(2).visible{
+    animation: numYearsWorkAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+ }
+
+
+
+ .successRate{
+    position: relative;
+
+
+    background-color: rgb(189, 189, 189);
+    animation: successRateAnim 4s forwards ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+    /* animation-delay: 5s; */
+ }
+ /* .successRate.visible{
+    animation: successRateAnim 4s forwards ease-in-out;
+    animation-iteration-count: 1; 
+    animation-delay: 2s;
+
+ } */
+ .successRate span:nth-child(2){
+    opacity: 0;
+    text-wrap: nowrap;
+
+    /* animation: numSuccessRateAnim 4s forwards ease-in-out !important; */
+    animation: numSuccessRateAnim 4s forwards ease-in-out;
+    /* animation-delay: 2s; */
+ }
+ /* .successRate span:nth-child(2).visible{
+    animation: numSuccessRateAnim 4s forwards ease-in-out !important;
+    animation-delay: 2s;
+
+ } */
+
+
+
+ .satisfiedClients{
+    position: relative;
+
+    background-color: rgb(255, 215, 0);
+    /* overflow: hidden; */
+    /* padding-right: 20px; */
+    animation: satisfiedClientsAnim 4s forwards ease-in-out;
+    /* animation-delay: 5s; */
+
+ }
+
+
+ 
+.satisfiedClients span:nth-child(2){
+    opacity: 0;
+    /* position:static; */
+    text-wrap: nowrap;
+    /* transform: translateX(0); */
+
+    animation: numSatisfiedClientsAnim 4s forwards ease-in-out;
+    /* animation-delay: 3s; */
+ }
+
+
+ /* .satisfiedClients span:nth-child(2).visible{
+    animation: numSatisfiedClientsAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+
+ } */
+/* setting time duration annimation */
+.yearsWork span:nth-child(2), .successRate span:nth-child(2),.satisfiedClients span:nth-child(2){
+    animation-delay: 3s;
+}
+.yearsWork, .successRate,.satisfiedClients{
+    animation-delay: 3s;
+}
+
+
+/*  */
+.aboutCompany{
+    grid-column: 22/span 13;
+    grid-row:1 !important;
+    display: flex;
+    text-align: left !important;
+    justify-content: right;
+}
+.aboutCompany span:nth-child(1),.aboutDash{
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    /* background-color: red; */
+    /* color:aqua; */
+     text-align: center;
+    align-items:baseline;
+    /* justify-content: center;  */
+    transform: translateY(-3px);
+    /* width: 100%; */
+    z-index: 1000;
+}
+.aboutSlogan{
+    grid-column: 22/span 13;
+
+    grid-row:2 !important;
+    text-align: right;
+    
+}
+.aboutDetails{
+    grid-column: 22/span 13;
+
+    grid-row:3 !important;
+    margin-bottom: 30px;
+
+}
+.aboutDetails p{
+    text-align: justify;
+}
+    .aboutPros{
+    grid-column:22/span 9 ;
+    grid-row:4/span 3 !important;
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    justify-items: right;
+
+}
+.aboutExperties,.aboutAccurate,.aboutQuality{
+    justify-content: right;
+    text-align: right;
+
+}
+.aboutEmergency{
+    grid-column:29/span 6 ;
+    grid-row:4/span 3 !important;
+    /* align-self: left !important; */
+    display: flex;
+    justify-content: left !important;
+    text-align: right;
+    gap:0px;
+}
+
+
+    /*  */
+/* portfolio */
+
+
+.slide{
+    /* padding-top: 7vw; */
+    width:220px;
+    margin-top: 250px;
+    /* padding-bottom: 8vw; */
+    /* margin-bottom: 220px; */
+}
+.bullet-container {
+    /* padding-top: 16vw; */
+    margin-top: 250px;
+}
+/*  */
+
+
+
+    /* --products-- */
+
+
+/* product  */
+/* .products{
+display:flex;
+} */
+.productIntro{
+    grid-column: 4 / span 5;
+    grid-row: 1;
+    justify-content: left; 
+    
+}
+.productIntro.visible {
+    grid-column: 34/span 9;
+    justify-content: left;    
+}
+.productsPhotos {
+    /* text-align: left; */
+    height: 10vh;
+}
+
+.productTitle{
+    grid-column: 4 / span 9;
+    grid-row: 2; 
+    justify-content: left; 
+    
+}
+.productDetails{
+    grid-column: 4 / span 9;
+    grid-row: 3;
+    justify-content: left; 
+    display: flex;
+
+}
+.productDetails.visible{
+    justify-content:left;
+    display: flex;
+}
+
+.productsPhotos{
+    flex-direction: row;
+}
+
+
+/* -- footer contact -- */
+.contactText{
+    text-align: left;
+    grid-column: 35/span 4;
+}
+
+.footerAddresses{
+    justify-content: right;
+    text-align: right;
+    /* gap:3px; */
+
+}
+.locationText, .phoneNumIconText, .emailIconText{
+    justify-content: right;
+    text-align: right;
+
+}
+.locationText, .phoneNumText, .emailText{
+    margin-left: 10px;
+}
+.locationIcon{
+    width: 20px;
+
+}
+.locationText{
+    font-size: 20px; 
+}
+.phoneNumIcon{
+    width: 20px;
+}
+.phoneNumText{
+    font-size: 20px; 
+}
+.emailIcon{
+    width: 25px;
+}
+.emailText{
+    font-size: 20px; 
+}
+
+/*  */
+/* footer second part */
+.footerSocial{
+    grid-column: 7/ span 4;
+    gap: 2vw;
+    justify-content: left;
+}
+.footerLang{
+    grid-row: 7;
+}
+
+.myAddress{
+    grid-row: 7;
+
+    grid-column: 32 / span 6;
+}
+/*  */
+
+  /* visability  part */
+  .aboutChart,.menuMT{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+.aboutCompany span:nth-child(1),.productIntro span:nth-child(1),.menu{
+    opacity:1;
+    visibility:visible;
+    display: flex;
+
+}
+.yearsWork , .successRate , .satisfiedClients{
+    opacity:1;
+    visibility:visible;
+    display: flex;
+
+}
+/*  */
+
+}
+
+
+/* =================== devices settings sizes ================= */
+
+
+
+
+@media (orientation: portrait) and (width: 1024px) and (height: 1342px){
+    /* header */
+    .socialMedia ul{
+        margin-top: 1vh;
+
+    }
+    .logo{
+        height:1px;
+        margin-top:-8vh;
+    }
+
+    .menu{
+        margin-top:0;
+    }
+    .title{
+        margin-top: -15%;
+    }
+    .logo_photo_class{
+        /* transform: translate(1%, 11%)!important; */
+         height: 10vh;
+        width: 11vw;
+        /* width: 100%; */
+        margin-top:-4vh; 
+        top:2px;
+        background-size: 100%;
+    }
+    .title {
+        margin-top: -11%;
+    }
+    .menu ul{
+        transform: translate(9%, -6%);
+    }
+/* -- hero -- */
+    .bgImageToAllHero{
+        height:95vh!important;
+        /* visibility: none; */
+        /* height: 10vh; */
+        overflow: hidden;
+        /* border: 1px solid #ccc; */
+        background-size: 189% !important;
+        background-position: 90% 33.5% !important;
+        /* height: 85vh!important; */
+
+    }
+
+
+    .welcome{
+       grid-row:3; 
+       
+    }
+    .welcomText{
+        font-size: 2.7vw!important;
+    }
+    .dash{
+        font-size: 2.7vw!important;
+        margin-top: 0vh;
+
+    }
+    .slogan{
+        grid-row:3; 
+        font-size: 6.8vw;
+
+    }
+    .heroDetails{
+        grid-row: 7 / span 3;
+        font-size: 2.2vw;
+    }
+
+
+    /* -- about part -- */
+
+    .aboutImage{
+        height: 31vh;
+        width:39vw;
+        grid-column:4 / span 18;
+
+    } 
+    /* statistics animation part */
+    @keyframes yearsWorkExAnim{
+        0% {
+            width: 7.3vw;
+        }
+    
+        100% {
+            width: 28vw;
+    
+        }
+    }
+
+    @keyframes successRateAnim{
+
+        0% {
+            width: 7.3vw;
+        }
+    
+    
+        100% {
+            width: 26vw;
+    
+    
+        }
+    }
+
+    @keyframes satisfiedClientsAnim{
+        0% {
+            width: 7.3vw;
+    
+        }    
+    
+    
+        100% {
+            width: 24vw;
+    
+        }
+    }
+
+
+    .aboutCompany{
+        grid-column: 22 / span 16;
+        font-size: 2.4vw;
+    }
+    .aboutDash{
+        margin-top: 1vh;
+        transform: translateY(0px);
+    }
+
+    .aboutSlogan{
+        grid-column: 22 / span 16;
+        /* font-size: 194%; */
+
+    }
+    .aboutDetails{
+        grid-column: 22 / span 16;
+        margin-bottom: -10px;
+    }
+
+    .aboutEmergency{
+        grid-column: 32/span6;
+    }
+/* portfolio */
+.portfolioSlogan.visible{
+    font-size: 2.5vw;
+}
+.slides {
+height:452px;
+}
+.bullet{
+
+    margin: 0 10px;
+}
+
+/* products */
+
+.productTitle{
+    grid-column: 4/ span 13;
+}
+.productDetails{
+    grid-column: 4/ span 13;
+    text-align: justify;
+    width:106%;
+}
+
+/*  */
+
+
+    .firstPhoto,.secondPhoto,.thirdPhoto {
+        min-height: 22vh
+    }
+
+    .photoShape{
+        bottom: 14%;
+        left: 6%;
+    }
+    .gap_line_last_line_product{
+        margin-bottom: 16vh;
+    }
+    .photoShape span:nth-child(1){
+        font-size: 134%;
+    }
+    /* -- same texts -- */
+    .welcomText,.aboutCompanyTxt,.portfolioText,.productIntro span:nth-child(2),.contactText{
+        font-size: 2.4vw!important;
+    }
+    .yearsWork, .successRate, .satisfiedClients {
+        font-size: 100%;
+    }
+    .aboutTitle,.productTitle.visible{
+        font-size: 3vw;
+
+    }
+    .aboutDetails p,.productDetails.visible{
+        font-size: 100%;
+    }
+    /*  */
+}
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    .socialMedia img{
+        width: 1.2vw;
+        transform: translate(350%, -0.5vh);
+        top:30px
+    }
+    .lang{
+        grid-column: 95 / span3;
+        transform: translateY(-0.5vh)
+    }
+    .dividerLang{
+        grid-column: 98;
+    }
+    .logo_photo_class{
+        /* transform: translate(1%, 11%)!important; */
+         height: 23vh;
+        width: 11vw;
+        /* width: 100%; */
+        margin-top:0vh; 
+        top:2px;
+        background-size: 100%;
+    }
+    .title {
+        margin-top: -11%;
+    }
+    .menu ul{
+        transform: translate(34%, -6%);
+    }
+    /* hero */
+    .bgImageToAllHero{
+        /* grid-row: 1/span 7; */
+        background-position: 14% 49.5%!important;
+        background-size: 85%!important;
+        height: 85vh!important;
+        grid-row: 2/span 4 !important;
+    }
+    .welcome{
+        grid-row: 4;
+    }
+    .dash {
+        transform: translate(20%, -13%);
+    }
+    .slogan{
+        grid-row:4;
+    } 
+    .heroDetails{
+        grid-row: 5/span 1;
+
+    }
+    /* about */
+    .aboutImage{
+        height: 70vh !important;
+        grid-column: 23 / span 15;
+        width: 37vw;
+    }
+    /* statistics animation part */
+    @keyframes yearsWorkExAnim{
+        0% {
+            width: 7.3vw;
+        }
+    
+        100% {
+            width: 28vw;
+    
+        }
+    }
+
+    @keyframes successRateAnim{
+
+        0% {
+            width: 7.3vw;
+        }
+    
+    
+        100% {
+            width: 26vw;
+    
+    
+        }
+    }
+
+    @keyframes satisfiedClientsAnim{
+        0% {
+            width: 7.3vw;
+    
+        }    
+    
+    
+        100% {
+            width: 24vw;
+    
+        }
+    }
+/* test */
+    .aboutCompany{
+        grid-column: 5 / span 13;
+    }
+    .aboutDash{
+        transform: translateY(-6px)!important;
+    }
+    .aboutSlogan{
+        grid-column: 3 / span 15;
+    }
+    .aboutDetails{
+         grid-column: 3 / span 15;
+        }
+    .aboutPros{
+        grid-column: 3 / span 15;
+    }
+        .aboutEmergency{
+            grid-column: 3 / span 7; 
+        }
+
+    /* portfolio */
+    .slideshow-container{
+        margin-bottom: 0px;
+        height:110h;
+    }
+    .slides {
+        width: 18px;
+
+    }
+    .slide {
+        width: 21vw!important;
+        margin-top: 27vw!important;
+        margin:0vw 10px!important;
+    }
+    .bullet-container{
+        margin-top: -50px;
+        margin-right: -48px;
+
+
+    }
+    .bullet {
+        margin: 71px 11px;
+        transform: translateX(-36px);
+        width: 20px;
+        height: 20px;
+    }
+    .photoShape{
+        bottom: 24%;
+        left: 12%;
+    }
+/* - product - */
+    .productTitle.visible{
+        grid-column: 17 / span 20;
+        text-align: right;
+    }
+    .productDetails.visible{
+        grid-column: 26 / span 11;
+    }
+    .photoShape span:nth-child(1) {
+        font-size: 160%;
+    }
+    .photoShape span:nth-child(2){
+        font-size: 90%
+    }
+    /* footer */
+.locationText, .phoneNumText, .emailText{
+    font-size: 1.3vw;
+    }
+    /* -- same texts -- */
+    .welcomText,.aboutCompanyTxt,.portfolioText,.productIntro span:nth-child(2),.contactText{
+        font-size: 1.5vw!important;
+    }
+    .yearsWork, .successRate, .satisfiedClients {
+        font-size: 150%;
+    }
+    .aboutTitle,.productTitle.visible{
+        font-size: 2.5vw;
+
+    }
+    .aboutDetails p,.productDetails.visible,.heroDetails p{
+        font-size: 140%;
+        text-align: right;
+    }
+    /*  */
+}
+
+@media (min-width: 1441px) and (max-width: 1680px){
+
+    .socialMedia img{
+        width: 1.2vw;
+        transform: translate(500%, 0.5vh);
+        top:30px
+    }
+    .lang{
+        grid-column: 97 / span3;
+    }
+    .dividerLang{
+        grid-column: 98;
+    }
+    .logo_photo_class{
+        /* transform: translate(1%, 11%)!important; */
+         height: 27vh;
+        width: 11vw;
+        /* width: 100%; */
+        margin-top:-1vh; 
+        top:2px;
+        background-size: 100%;
+    }
+    .title {
+        margin-top: -11%;
+    }
+    .menu ul{
+        transform: translate(33%, -4%);
+    }
+    /* hero */
+    .bgImageToAllHero{
+        /* background-position: 82% 33.5%!important;
+        background-size: 134%!important; */
+
+        background-position: 19% 48.5%!important;
+        background-size: 110%!important;
+    }
+
+    .welcome{
+        margin-top:30px;
+    }
+    .slogan{
+        grid-row:4;
+    } 
+    /* about */
+    .aboutImage{
+        height: 70vh !important;
+        grid-column: 4 / span 15;
+        width: 37vw;
+    }
+    .aboutCompany{
+        grid-column: 25 / span 13;
+    }
+    .aboutDash{
+        transform: translateY(-8px)!important;
+    }
+    .aboutSlogan{
+        grid-column: 23 / span 15;
+    }
+    .aboutDetails{
+         grid-column: 23 / span 15;
+        }
+    .aboutPros{
+        grid-column: 23 / span 15;
+    }
+        .aboutEmergency{
+            grid-column: 22 / span 7; 
+        }
+
+    /* portfolio */
+    .slideshow-container{
+        margin-bottom: 0px;
+        height:110h;
+    }
+    .slides {
+        width: 18px;
+
+    }
+    .slide {
+        width: 17vw!important;
+        margin-top: 27vw!important;
+        margin:0vw 10px!important;
+    }
+    .bullet-container{
+        margin-top: -50px;
+        margin-right: -36px;
+
+
+    }
+    .bullet {
+        margin: 71px 11px;
+        transform: translateX(-36px);
+        width: 20px;
+        height: 20px;
+    }
+    .photoShape{
+        bottom: 24%;
+        left: 12%;
+    }
+/* - product - */
+    .productTitle.visible{
+        grid-column: 17 / span 20;
+        text-align: right;
+    }
+    .productDetails.visible{
+        grid-column: 26 / span 11;
+    }
+    .photoShape span:nth-child(1) {
+        font-size: 160%;
+    }
+    .photoShape span:nth-child(2){
+        font-size: 90%
+    }
+    /* footer */
+.locationText, .phoneNumText, .emailText{
+    font-size: 1.3vw;
+    }
+/* -- move upper -- */
+.moveUpper{
+    right: -205px;
+    bottom: 40px;
+}
+
+
+
+.moveUpper img{
+    width: 20%;
+
+}
+
+
+    /* -- same texts -- */
+    .welcomText,.aboutCompanyTxt,.portfolioText,.productIntro span:nth-child(2),.contactText{
+        font-size: 1.5vw!important;
+    }
+    .yearsWork, .successRate, .satisfiedClients {
+        font-size: 160%;
+    }
+    .aboutTitle,.productTitle.visible{
+        font-size: 2.5vw;
+
+    }
+    .aboutDetails p,.productDetails.visible,.heroDetails{
+        font-size: 160%;
+        text-align: right;
+    }
+    /*  */
+
+
+
+}
+
+@media (min-width: 1681px) and (max-width: 1920px){
+
+    .socialMedia img{
+        width: 1.2vw;
+        transform: translate(450%, 1.5vh);
+        top:30px
+    }
+    .lang{
+        grid-column: 97 / span3;
+    }
+    .dividerLang{
+        grid-column: 98;
+    }
+    .logo_photo_class{
+        /* transform: translate(1%, 11%)!important; */
+         height: 24vh;
+        width: 11vw;
+        /* width: 100%; */
+        margin-top:-1vh; 
+        top:2px;
+        background-size: 100%;
+    }
+    .title {
+        margin-top: -9%;
+    }
+    .menu{
+
+        transform: translate(0%, -5.5%)!important;
+    }
+    .menu ul{
+        transform: translate(33%, -2%);
+        height: 280px;
+
+    }
+    /* hero */
+    .bgImageToAllHero{
+        background-position: 10% 47.6%!important;
+        background-size: 120%!important;
+    }
+    .slogan{
+        grid-row:4;
+    } 
+    /* about */
+    .aboutImage{
+        height: 70vh !important;
+        grid-column: 24 / span 15;
+        width: 37vw;
+    }
+    .aboutCompany{
+        grid-column: 6 / span 13;
+    }
+    .aboutDash{
+        transform: translate(4px,-10px);
+    }
+    .aboutSlogan{
+        grid-column: 7 / span 12;
+    }
+    .aboutDetails{
+         grid-column: 4 / span 15;
+        }
+    .aboutPros{
+        grid-column: 4 / span 15;
+    }
+        .aboutEmergency{
+            grid-column: 4 / span 7; 
+        }
+
+    /* portfolio */
+    .slideshow-container{
+        margin-bottom: 0px;
+        height:110h;
+    }
+    .slides {
+        width: 18px;
+
+    }
+    .slide {
+        width: 14.5vw!important;
+        margin-top: 27vw!important;
+        margin:0vw 10px!important;
+    }
+    .bullet-container{
+        margin-top: -50px;
+        margin-right: -36px;
+
+
+    }
+    .bullet {
+        margin: 71px 11px;
+        transform: translateX(-36px);
+        width: 20px;
+        height: 20px;
+    }
+    .photoShape{
+        bottom: 24%;
+        left: 12%;
+    }
+/* - product - */
+    .productTitle.visible{
+        grid-column: 17 / span 20;
+        text-align: right;
+    }
+    .productDetails.visible{
+        grid-column: 26 / span 11;
+    }
+    .photoShape span:nth-child(1) {
+        font-size: 160%;
+    }
+    .photoShape span:nth-child(2){
+        font-size: 90%
+    }
+/* footer */
+.locationText, .phoneNumText, .emailText{
+font-size: 1.3vw;
+}
+/* -- move upper -- */
+.moveUpper{
+    right: -185px;
+    bottom: 40px;
+}
+
+
+
+.moveUpper img{
+    width: 25%;
+
+}
+    /* -- same texts -- */
+    .welcomText,.aboutCompanyTxt,.portfolioText,.productIntro span:nth-child(2),.contactText{
+        font-size: 1.5vw!important;
+    }
+    .yearsWork, .successRate, .satisfiedClients {
+        font-size: 170%;
+    }
+    .aboutTitle,.productTitle.visible{
+        font-size: 2.5vw;
+
+    }
+    .aboutDetails p,.productDetails.visible,.heroDetails{
+        font-size: 160%;
+        text-align: right;
+    }
+    /*  */
+
+}
+@media (min-width: 1921px) and (max-width: 2048px){
+    .socialMedia{
+        grid-column: 78 / span 25;
+    }
+    .socialMedia img{
+        width: 1.2vw;
+        transform: translate(400%, 1.5vh);
+        top:30px
+    }
+    .lang{
+        grid-column: 97 / span3;
+    }
+    .dividerLang{
+        grid-column: 98;
+    }
+    .logo_photo_class{
+        /* transform: translate(1%, 11%)!important; */
+         height: 18vh;
+        width: 11vw;
+        /* width: 100%; */
+        margin-top:-1vh; 
+        top:2px;
+        background-size: 100%;
+    }
+    .title {
+        margin-top: -8%;
+    }
+    .menu ul{
+        transform: translate(33%, -4%);
+        height: 180px;
+    }
+    /* hero */
+    .bgImageToAllHero{
+        background-position: 13% 41.5%!important;
+        background-size: 134%!important;
+    }
+    .slogan{
+        grid-row:4;
+    } 
+    /* about */
+    .aboutImage{
+        height: 62vh !important;
+        grid-column: 4 / span 15;
+        width: 39vw;
+    }
+    .aboutCompany{
+        grid-column: 25 / span 13;
+    }
+    .aboutDash{
+        transform: translateY(-6px)!important;
+    }
+    .aboutSlogan{
+        grid-column: 23 / span 15;
+    }
+    .aboutDetails{
+         grid-column: 23 / span 15;
+         margin-bottom: -22px;
+        }
+    .aboutPros{
+        grid-column: 23 / span 15;
+    }
+        .aboutEmergency{
+            grid-column: 22 / span 7; 
+        }
+        .aboutIcon {
+            width: 25px;
+        }
+
+    /* portfolio */
+    .slideshow-container{
+        margin-bottom: 0px;
+        height:110h;
+    }
+    .slides {
+        width: 18px;
+
+    }
+    .slide {
+        width: 14.5vw!important;
+        margin-top: 27vw!important;
+        margin:0vw 10px!important;
+    }
+    .bullet-container{
+        margin-top: -50px;
+        margin-right: -44px;
+
+
+    }
+    .bullet {
+        margin: 71px 11px;
+        transform: translateX(-36px);
+        width: 20px;
+        height: 20px;
+    }
+    .photoShape{
+        bottom: 24%;
+        left: 12%;
+    }
+/* - product - */
+    .productTitle.visible{
+        grid-column: 17 / span 20;
+        text-align: right;
+
+    }
+    .productDetails.visible{
+        grid-column: 26 / span 11;
+    }
+    .photoShape span:nth-child(1) {
+        font-size: 160%;
+    }
+    .photoShape span:nth-child(2){
+        font-size: 90%
+    }
+/* footer */
+.locationText, .phoneNumText, .emailText{
+font-size: 1.3vw;
+}
+/* -- move upper -- */
+.moveUpper{
+    right: -155px;
+    bottom: 40px;
+}
+
+
+
+.moveUpper img{
+    width: 25%;
+
+}
+
+    /* -- same texts -- */
+    .welcomText,.aboutCompanyTxt,.portfolioText,.productIntro span:nth-child(2),.contactText{
+        font-size: 1.5vw!important;
+    }
+    .yearsWork, .successRate, .satisfiedClients {
+        font-size: 150%;
+    }
+    .aboutTitle,.productTitle.visible{
+        font-size: 2.5vw;
+
+    }
+    .aboutExperties, .aboutAccurate, .aboutQuality,.aboutEmergency{
+        font-size: 180%;
+    }
+    .aboutDetails p,.productDetails.visible,.heroDetails{
+        font-size: 220%;
+        text-align: right;
+    }
+    .yearsWork span:nth-child(2), .successRate span:nth-child(2), .satisfiedClients span:nth-child(2){
+        font-size: 100%;
+    }
+    /*  */
+
+
+}
+
+@media (min-width: 2049px) and (max-width: 2496px){
+    .socialMedia{
+        grid-column: 80 / span 25;
+    }
+    
+    
+    .socialMedia ul{
+        transform: translate(15%, -0.5vh);
+    }
+        .socialMedia img{
+        width: 1.2vw;
+        /* transform: translate(-79%, 1.5vh); */
+        top:30px
+    }
+    .lang{
+        grid-column: 97 / span3;
+    }
+    .dividerLang{
+        grid-column: 98;
+    }
+    .logo_photo_class{
+        /* transform: translate(1%, 11%)!important; */
+         height: 17vh;
+        width: 11vw;
+        /* width: 100%; */
+        margin-top:-1vh; 
+        top:2px;
+        background-size: 100%;
+    }
+    .title {
+        margin-top: -4%;
+    }
+    .menu{
+         height: 15vh;
+         margin-top: 22px;
+    }
+    .menu ul{
+        transform: translate(9%, -1%);
+    }
+    /* hero */
+    .welcome{
+        grid-column: 26/ span 20;
+    }
+    .bgImageToAllHero{
+        background-position: 82% 33.5%!important;
+        background-size: 134%!important;
+    }
+    .slogan{
+        grid-row:4;
+    } 
+    /* about */
+    .aboutImage{
+        height: 55vh !important;
+        grid-column: 4 / span 15;
+        width: 37vw;
+    }
+    .aboutCompany{
+        grid-column: 25 / span 13;
+    }
+    .aboutDash{
+        transform: translateY(-5px)!important;
+    }
+    .aboutSlogan{
+        grid-column: 23 / span 15;
+    }
+    .aboutDetails{
+         grid-column: 23 / span 15;
+        }
+    .aboutPros{
+        grid-column: 23 / span 15;
+    }
+    .aboutEmergency{
+        grid-column: 22 / span 7; 
+    }
+    .aboutIcon {
+        width: 30px;
+    }
+
+    /* portfolio */
+    .slideshow-container{
+        margin-bottom: 0px;
+        height:110h;
+    }
+    .slides {
+        width: 18px;
+        height:800px;
+    }
+    .slide {
+        width: 14.5vw!important;
+        margin-top: 27vw!important;
+        margin:0vw 10px!important;
+    }
+    .bullet-container{
+        margin-top: -50px;
+        margin-right: -36px;
+
+
+    }
+    .bullet {
+        margin: 71px 20px;
+        transform: translateX(-36px);
+        width: 20px;
+        height: 20px;
+    }
+    .photoShape{
+        bottom: 24%;
+        left: 12%;
+    }
+/* - product - */
+    .productTitle.visible{
+        grid-column: 32 / span 20;
+    }
+    .productDetails.visible{
+        grid-column: 27 / span 11;
+    }
+    .photoShape span:nth-child(1) {
+        font-size: 160%;
+    }
+    .photoShape span:nth-child(2){
+        font-size: 90%
+    }
+/* footer */
+.locationText, .phoneNumText, .emailText{
+font-size: 1.3vw;
+}
+/* -- move upper -- */
+.moveUpper{
+    right: -160px;
+    bottom: 40px;
+}
+
+
+
+.moveUpper img{
+    width: 30%;
+
+    /* z-index: 100; */
+}
+    /* -- same texts -- */
+    .welcomText,.aboutCompanyTxt,.portfolioText,.productIntro span:nth-child(2),.contactText{
+        font-size: 1.9vw!important;
+    }
+    .yearsWork, .successRate, .satisfiedClients {
+        font-size: 173%;
+    }
+    .aboutTitle,.productTitle.visible{
+        font-size: 2.5vw;
+
+    }
+
+    .aboutDetails p,.productDetails.visible,.heroDetails{
+        font-size: 250%;
+        text-align: right;
+    }
+    .aboutExperties, .aboutAccurate, .aboutQuality,.aboutEmergency{
+        font-size: 200%;
+    }
+    .yearsWork span:nth-child(2), .successRate span:nth-child(2), .satisfiedClients span:nth-child(2){
+        font-size: 100%;
+    }
+    /*  */
+
+}
+@media (min-width: 2497px) and (max-width: 5120px){
+    .socialMedia {
+        transform: translate(0%, 0.1vh);
+        grid-column: 81 / span 25;
+    }
+    .socialMedia ul{
+        transform: translate(-2%, 0.5vh);
+    }
+        .socialMedia img{
+        width: 1.2vw;
+        transform: translate(263%, 50%);
+        top:30px
+    }
+    .lang{
+        grid-column: 97 / span3;
+    }
+    .dividerLang{
+        grid-column: 98;
+    }
+    .logo_photo_class{
+        /* transform: translate(1%, 11%)!important; */
+         height: 29vh;
+        width: 11vw;
+        /* width: 100%; */
+        margin-top:-6vh; 
+        top:2px;
+        background-size: 100%;
+    }
+    .title {
+        margin-top: -4%;
+        grid-column: 21/span 15;
+    }
+    .menu{
+         height: 15vh;
+         margin-top: 22px;
+    }
+    .menu ul{
+        transform: translate(17%,1%);
+        height: 181px;
+    }
+    .menu li{
+        transform: translate(87%,10%);
+    }
+    /* hero */
+    .welcome{
+        grid-column: 26/ span 20;
+    }
+    .bgImageToAllHero{
+        background-position: 82% 33.5%!important;
+        background-size: 134%!important;
+    }
+    .slogan{
+        grid-row:4;
+    } 
+    /* about */
+    .aboutImage{
+        height: 59vh !important;
+        grid-column: 6 / span 15;
+        width: 30vw;
+    }
+    .aboutCompany{
+        grid-column: 31 / span 13;
+    }
+    .aboutDash{
+        transform: translateY(-24px)!important;
+    }
+    .aboutSlogan{
+        grid-column: 21 / span 15;
+    }
+    .aboutDetails{
+         grid-column: 21 / span 15;
+        }
+    .aboutPros{
+        grid-column: 21 / span 15;
+        /* text-align: right; */
+        /* justify-items: right; */
+    }
+
+    .aboutEmergency{
+        grid-column: 20/ span 7; 
+        text-align: right;
+    }
+    .aboutIcon {
+        width: 60px;
+    }
+
+    /* portfolio */
+    /* .portfolioText{
+        font-size: px;
+
+    } */
+    .slideshow-container{
+        margin-bottom: 0px;
+        height:110h;
+    }
+    .slides {
+        width: 18px;
+        height:1513px;
+    }
+    .slide {
+        width: 14.5vw!important;
+        margin-top: 27vw!important;
+        margin:0vw 10px!important;
+    }
+    .bullet-container{
+        margin-top: -50px;
+        margin-right: 90px;
+
+
+    }
+    .bullet {
+        margin: 71px 47px;
+        transform: translateX(-36px);
+        width: 80px;
+        height: 80px;
+    }
+    .photoShape{
+        bottom: 24%;
+        left: 12%;
+    }
+/* - product - */
+.productIntro span:nth-child(2){
+    transform: translate(26px,-28px);
+    /* gap:3px; */
+}
+    .productIntro.visible{
+        grid-column:34/ span 5;
+    } 
+    .productTitle.visible{
+        grid-column: 17 / span 20;
+    }
+    .productDetails.visible{
+        grid-column: 26 / span 11;
+    }
+    .photoShape span:nth-child(1) {
+        font-size: 160%;
+    }
+    .photoShape span:nth-child(2){
+        font-size: 90%
+    }
+/* footer */
+.footerAddresses{
+    grid-column: 7 / span 30;
+    text-align: right;
+    justify-content: right;
+}
+.locationText, .phoneNumText, .emailText{
+font-size: 1.3vw;
+/* text-align: right; */
+/* justify-content: right;
+align-items: right; */
+/* text-align: right;
+justify-content: right; */
+}
+.locationText, .phoneNumIconText, .emailIconText{
+    justify-content: right;
+    text-align: right;
+
+}
+.locationIcon,.phoneNumIcon,.emailIcon{
+    width: 65px;
+
+}
+
+    /* -- same texts -- */
+    .welcomText,.aboutCompanyTxt,.portfolioText,.productIntro span:nth-child(2),.contactText{
+        font-size: 1.5vw!important;
+    }
+    .yearsWork, .successRate, .satisfiedClients {
+        font-size: 173%;
+    }
+    .aboutTitle,.productTitle.visible{
+        font-size: 2.5vw;
+        text-align: right;
+
+    }
+
+    .aboutDetails p,.productDetails.visible,.heroDetails{
+        font-size: 450%;
+        text-align: right;
+    }
+    .aboutExperties, .aboutAccurate, .aboutQuality,.aboutEmergency{
+        font-size: 400%;
+        text-align: right;
+        justify-content: right;
+
+    }
+    .yearsWork span:nth-child(2), .successRate span:nth-child(2), .satisfiedClients span:nth-child(2){
+        font-size: 100%;
+    }
+    /*  */
+/* -- move upper -- */
+.moveUpper{
+    right: -70px;
+    bottom: 40px;
+}
+
+
+
+.moveUpper img{
+    width: 60%;
+
+    /* z-index: 100; */
+}
+
+  /* visability  part */
+  .menuMT ul,.menuMT li{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+
+
+
+}

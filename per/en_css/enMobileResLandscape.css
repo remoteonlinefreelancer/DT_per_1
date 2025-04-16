@@ -1,0 +1,262 @@
+
+   
+
+@media (orientation: landscape) and (width: 814px) and (height: 432px) {
+
+    .container_bgMenu_tabMo {
+        
+        height: 50vh!important;
+    }
+ /* --- hero --- */
+    .bgImageToAllHero{
+        height: 158vh !important;
+        background-position: -290px -211px !important;
+    } 
+
+    /* --- about --- */
+    .aboutImage {
+        min-height: 83vh!important;
+    }
+    .aboutEmergency{
+        grid-column: 22/ span 12!important;
+        grid-row:12;
+    }
+    .slideshow-container{
+        margin-bottom: 49px;
+    }
+    .slides {
+        width: 61px;
+        height: 475px;
+
+    }
+    .bullet-container{
+        margin-top: -51px;
+        /* margin-bottom: -30px; */
+
+
+    }
+    .slideshow-container {
+        margin-bottom: 20px;
+    }
+
+/* -- product --  */
+.firstPhoto,.secondPhoto,.thirdPhoto{
+    min-height: 89vh;
+}
+.photoShape{
+    bottom: 10%;
+    left: 5%;
+}
+.photoShape span:nth-child(1){
+    font-size: 170%;
+}
+
+    /* footer */
+    .footer{
+        margin-top: 40px;
+    }
+    .footerSocial{
+        gap: 3vw !important;
+        /* grid-column: 7 / span 4!important; */
+    }
+    .footerSocial img{
+        width: 1.5vw!important;
+    }
+
+
+
+
+}
+
+@media (orientation: landscape) and (width: 734px) and (height: 394px) {
+
+    .container_bgMenu_tabMo{
+
+        height: 47vh!important;
+    }
+    /* -- hero --  */
+    .bgImageToAllHero {
+
+        height:197vh!important;
+    }
+    .heroDetails {
+        line-height: 1.2;
+
+
+    }
+    /* -- about --  */
+    .aboutImage {
+    height: 80vh;
+    }
+    /* portfolio */
+    .slideshow-container{
+        margin-bottom: 49px;
+    }
+    .slides {
+        width: 8px;
+        height: 389px;
+
+    }
+    .slide {
+        width: 152px;
+    }
+    .bullet-container{
+        margin-top: -51px;
+
+
+    }
+    .bullet {
+       margin: 33px 8px;
+    }
+/* -- product --  */
+.firstPhoto,.secondPhoto,.thirdPhoto{
+    min-height: 89vh;
+}
+.photoShape{
+    bottom: 10%;
+    left: 5%;
+}
+.photoShape span:nth-child(1){
+    font-size: 170%;
+}
+
+
+
+}
+@media (orientation: landscape) and (width: 800px) and (height: 360px) {
+    
+    /* -- header -- */
+    .container_bgMenu_tabMo{
+
+        height: 54vh!important;
+    }
+    .logo_photo_class_tabMo{
+        height: 35vh;
+    }
+    .addresses ul{
+        margin-top: 10px;
+    }
+    /* -- hero --  */
+    .bgImageToAllHero {
+
+        height:197vh!important;
+    }
+    .heroDetails {
+        line-height: 1.2;
+
+
+    }
+    /* -- about --  */
+    .aboutImage {
+    height: 86vh;
+    }
+    /* portfolio */
+    .slideshow-container{
+        margin-bottom: 49px;
+    }
+    .slides {
+        width: 8px;
+        height: 389px;
+
+    }
+    .slide {
+        width: 140px;
+    }
+    .bullet-container{
+        margin-top: -62px;
+
+
+    }
+    .bullet {
+       margin: 25px 11px;
+       transform: translateX(-33px);
+    }
+/* -- product --  */
+.firstPhoto,.secondPhoto,.thirdPhoto{
+    min-height: 89vh;
+}
+.photoShape{
+    bottom: 2%;
+    left: 5%;
+}
+.photoShape span:nth-child(1){
+    font-size: 170%;
+}
+
+
+
+
+}
+
+@media (orientation: landscape) and (width: 915px) and (height: 412px) {
+
+
+    /* -- header -- */
+    .container_bgMenu_tabMo{
+
+        height: 54vh!important;
+    }
+    .logo_photo_class_tabMo{
+        height: 35vh;
+    }
+    .addresses ul{
+        margin-top: 10px;
+    }
+    /* -- hero --  */
+    .bgImageToAllHero {
+
+        height:197vh!important;
+    }
+    .heroDetails {
+        line-height: 1.2;
+
+
+    }
+    /* -- about --  */
+    .aboutImage {
+    height: 84vh;
+    }
+    .aboutExperties, .aboutAccurate, .aboutQuality,.aboutEmergency span:nth-child(1){
+        font-size: 2.2vw;
+    }
+    /* portfolio */
+    .slideshow-container{
+        margin-bottom: 49px;
+    }
+    .slides {
+        width: 8px;
+        height: 389px;
+
+    }
+    .slide {
+        width: 167px;
+    }
+    .bullet-container{
+        margin-top: -40px;
+
+
+    }
+    .bullet {
+       margin: 29px 13px;
+       transform: translateX(-33px);
+    }
+/* -- product --  */
+.firstPhoto,.secondPhoto,.thirdPhoto{
+    min-height: 89vh;
+}
+.photoShape{
+    bottom: 1%;
+    left: 12%;
+}
+.photoShape span:nth-child(1){
+    font-size: 170%;
+}
+
+
+
+
+
+}
+@media (orientation: landscape) and (width: 1366px) and (height: 1000px) {
+
+}

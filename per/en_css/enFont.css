@@ -1,0 +1,152 @@
+
+
+
+
+@font-face {
+    font-family: 'normal_font_bold';
+    src:
+     url('../per_font/Kanit-Regular.woff2') format('woff2'), 
+     /* Modern browsers */
+            url('../per_font/Kanit-Regular.woff') format('woff'), 
+              /* Older browsers */
+            url('../per_font/Kanit-Regular.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'welcome_font';
+    src:
+     url('../per_font/Kanit-Regular.woff2') format('woff2'), 
+     /* Modern browsers */
+            url('../per_font/Kanit-Regular.woff') format('woff'), 
+              /* Older browsers */
+            url('../per_font/Kanit-Regular.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hero_details_font';
+    src:
+     url('../per_font/BMitra.woff2') format('woff2'), 
+     /* Modern browsers */
+            url('../per_font/BMitra.woff') format('woff'), 
+              /* Older browsers */
+            url('../per_font/BMitra.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'normal_font2_100';
+    src: 
+    url('../en_font/Kanit-100.woff2') format('woff2'), 
+    /* Modern browsers */
+            url('../en_font/Kanit-100.woff') format('woff'),  
+             /* Older browsers */
+            url('../en_font/Kanit-100.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+
+@font-face {
+    font-family: 'normal_font';
+    src: 
+    url('../en_font/Kanit-200.woff2') format('woff2'), 
+    /* Modern browsers */
+            url('../en_font/Kanit-200.woff') format('woff'),  
+             /* Older browsers */
+            url('../en_font/Kanit-200.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+
+
+@font-face {
+    font-family: 'normal_font_bold_2';
+    src: 
+    url('../en_font/Kanit-SemiBold.woff2') format('woff2'), 
+    /* Modern browsers */
+            url('../en_font/Kanit-SemiBold.woff') format('woff'),   
+            /* Older browsers */
+            url('../en_font/Kanit-SemiBold.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'AddressFont';
+        src: 
+        url('../per_font/BYekan.woff2') format('woff2'),
+             url('../per_font/BYekan.woff') format('woff'),
+             url('../per_font/BYekan.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+@font-face {
+    font-family: 'menu_font';
+    src: 
+    url('../per_font/danstevis.woff2') format('woff2'),
+     /* Modern browsers */
+            url('../per_font/danstevis.woff') format('woff'),  
+             /* Older browsers */
+            url('../per_font/danstevis.ttf') format('truetype'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+
+
+
+    @font-face {
+        font-family: 'davudtech_font';
+        src: 
+        url('../per_font/Digi Lalezar Plus Circle.woff2') format('woff2'),
+            /* Modern browsers */
+                url('../per_font/Digi Lalezar Plus Circle.woff') format('woff'),   
+                /* Older browsers */
+                url('../per_font/Digi Lalezar Plus Circle.ttf') format('truetype'); /* Fallback */
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        }
+
+@font-face {
+    font-family: 'sloganFont';
+    src: 
+    url('../per_font/BYekan.woff2') format('woff2'),
+         url('../per_font/BYekan.woff') format('woff'),
+         url('../per_font/BYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'dashFont';
+    src: 
+    url('../en_font/OpenSans-Light.woff2') format('woff2'),
+         url('../en_font/OpenSans-Light.woff') format('woff'),
+         url('../en_font/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'statisticFont';
+    src: 
+    url('../per_font/BMitra.woff2') format('woff2'),
+         url('../per_font/BMitra.woff') format('woff'),
+         url('../per_font/BMitra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

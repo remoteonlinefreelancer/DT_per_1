@@ -1,0 +1,388 @@
+@keyframes yearsWorkExAnim{
+    0% {
+        width: 7.3vw;
+    }
+
+    100% {
+        width: 22vw;
+
+    }
+}
+@keyframes numYearsWorkAnim{
+    0% {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0px);
+        opacity: 0;
+
+    }
+    70%{
+        transform: translateX(0px) scale(1.5);
+        opacity: 1;
+    }
+
+    99% {
+        transform: translateX(280%)scale(1.2);
+        opacity: 1;
+        position:static;
+
+
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 1;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+@keyframes txTAnim{
+    0% {
+        opacity: 0;
+    }
+
+
+    50%{
+        opacity: 1;
+
+
+    }
+    100%{
+        opacity: 1;
+
+
+    }
+
+}
+
+@keyframes successRateAnim{
+
+    0% {
+        width: 7.3vw;
+    }
+
+
+    100% {
+        width: 20vw;
+
+
+    }
+}
+
+@keyframes numSuccessRateAnim{
+    0% {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0px);
+        opacity: 0;
+
+    }
+    70%{
+        transform: translateX(0px) scale(1.5);
+        opacity: 1;
+    }
+    99% {
+ 
+        transform: translateX(280%) scale(1.2);
+        position:static;
+
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+
+        position:absolute;
+        right: 20px;
+
+
+    }
+}
+
+
+
+@keyframes satisfiedClientsAnim{
+    0% {
+        width: 7.3vw;
+
+    }    
+
+
+    100% {
+        width: 18vw;
+
+    }
+}
+@keyframes numSatisfiedClientsAnim{
+    0% {
+        transform: translateX(0px);
+        opacity: 0;
+        /* position: relative; */
+
+
+
+    }
+    50%{
+        transform: translateX(0px);
+        opacity: 0;
+
+
+
+    }
+    70%{
+        transform: translateX(0px) scale(1.5);
+        opacity: 1;
+
+    }
+
+    99.99999% {
+ 
+        transform: translateX(280%) scale(1.2);
+        position:static;
+
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 1;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+ /* -- hero part animation -- */
+ @keyframes visabilityAnimation {
+    0%{
+        opacity: 0;
+        
+    }
+    70%{
+        opacity: 1;
+
+    }
+   
+    100%{
+        opacity: 1;
+        /* text-shadow:none; */
+
+    }
+    
+ }
+
+
+ @keyframes sloganAnimation {
+    0%{
+        opacity: 0;
+        
+    }
+    70%{
+        opacity: 1;
+
+    }
+
+
+
+    100%{
+        opacity: 1;
+        /* text-shadow:none; */
+
+    }
+    
+ }
+
+
+
+ @keyframes titleAnimation {
+    0%{
+        opacity: 0;
+        
+    }
+    70%{
+        opacity: 1;
+
+        text-shadow: 
+        0px 0px 1px black, /* Top-left outline */
+        0px 0px 1px black,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
+    }
+
+    100%{
+        opacity: 1;
+        /* text-shadow:none; */
+    }
+    
+ }
+ @keyframes logoAnimation {
+    0%{
+        opacity: 0;
+        
+    }
+
+    70%{
+        opacity: 1;
+
+
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+ }
+
+ /* - about: animation for MOBILE about part-  */
+@keyframes yearsWorkExMobileAnim{
+    0% {
+        height: 7.3vh;
+    }
+
+    100% {
+        height: 37vh;
+
+    }
+}
+
+@keyframes numYearsWorkMobileAnim{
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0px);
+        opacity: 0;
+
+    }
+    70%{
+        transform: translateY(0px) scale(1.5);
+        opacity: 1;
+    }
+
+    99% {
+        /* transform: translateY(270%)scale(1.2);
+        opacity: 1;
+        position:static; */
+
+
+    }
+    100%{
+        transform: scale(.2);
+        opacity: 1;
+        transform: translateY(-32vh);
+        opacity: 1;
+        position: absolute;
+        /* right: 20px; */
+    }
+}
+
+@keyframes successRateMobileAnim{
+
+    0% {
+        /* position: fixed; */
+        /* bottom: 0px; */
+        height: 7.3vh;
+    }
+
+
+    100% {
+        /* bottom: 0px; */
+        height: 35vh;
+
+
+    }
+}
+
+@keyframes numSuccessRateMobileAnim{
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0px);
+        opacity: 0;
+
+    }
+    70%{
+        transform: translateY(0px) scale(1.5);
+        opacity: 1;
+    }
+    99% {
+ 
+        /* transform: translateY(250%) scale(1.2);
+        position:static; */
+
+    }
+
+    100% {
+        transform: scale(.2);
+        opacity: 1;
+        transform: translateY(-30vh) ;
+        /* position:static; */
+
+        position: absolute;
+        /* right: 20px; */
+
+
+    }
+}
+
+
+    @keyframes satisfiedClientsMobileAnim{
+    0% {
+        bottom: 0;
+        transform: translateY(0px);
+        height: 7.3vh;
+
+    }    
+
+
+    100% {
+        bottom: 0;
+        transform: translateY(0px);
+
+        height: 33vh;
+
+    }
+}
+@keyframes numSatisfiedClientsMobileAnim{
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+        /* position: relative; */
+
+
+
+    }
+    50%{
+        transform: translateY(0px);
+        opacity: 0;
+
+
+
+    }
+    70%{
+        transform: translateY(0px) scale(1.5);
+        opacity: 1;
+
+    }
+
+    99.99999% {
+ 
+        /* transform: translateY(-200%) scale(1.2);
+        position:static; */
+
+    }
+    100%{
+        transform: scale(.2);
+        opacity: 1;
+        transform: translateY(-28vh);
+        /* position:static; */
+
+        position: absolute;
+        /* right: 20px; */
+        
+    }
+}

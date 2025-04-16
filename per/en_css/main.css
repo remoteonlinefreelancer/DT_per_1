@@ -1,0 +1,864 @@
+
+
+html{
+    scroll-behavior: smooth;
+
+    /* overflow: hidden; */
+}
+
+/* ================hero section=========== */
+    .hero{
+        margin-top: 6%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(40,1fr);
+        grid-template-rows: auto;
+        width:100%;
+        /* z-index: -11; */
+        /* background-position: 200% 600%;
+        background-image: url('../../image/hero.png');
+        background-size: cover; */
+        background-repeat: no-repeat;
+        /* overflow: hidden */
+
+
+        
+ /* -- bg herosection -- */
+        .bgImageToAllHero {
+            /* position: absolute; */
+            /* display: flex; */
+             grid-column: 1/ span 40;
+            grid-row: 1/ span 10;
+            margin-top: -2%;
+            top: 0%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+      /* background-color: brown; */
+            width: 100%;
+            height: 120vh;
+            background-image: url('../../image/hero.webp'); 
+            background-size: cover;
+            background-position: 0% 55.5%;
+            background-repeat: no-repeat;
+            z-index: -2;
+        }
+        
+        
+        .fullScreenTransparent {
+            position:absolute;
+
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.7;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+        
+
+
+
+    }
+
+    .welcome{
+        grid-column: 28/span 20 ;
+        grid-row:3;
+        display: flex;
+        flex-direction: row;
+        text-shadow: 
+        0px 0px 2px black, /* Top-left outline */
+        0px 0px 2px black,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
+        animation: visabilityAnimation 11s forwards  ease-in-out;
+        animation-iteration-count: 1; /* Play only once */
+
+        }
+    
+    .dash{
+
+        color: rgb(255, 215, 0);
+        transform: translate(30%,-50%);
+        font-size: 2.5vw;
+        /* background-color: aqua; */
+        z-index: 2;
+ 
+
+    }
+    .welcomText{
+    font-family: 'sloganFont', sans-serif;
+    color: rgb(255, 215, 0);
+    margin-left: 10px;
+    font-size: 1.7vw;
+    z-index: 2;
+    }
+
+    .slogan {
+        position: relative;
+        margin-top: 3.5%;
+        grid-column: 18/span 20 ;
+        grid-row:4/span 10;
+        text-align:right;
+
+        font-family: 'sloganFont', sans-serif;
+        color: white;
+
+        font-size:3.4vw;
+        z-index: 2;
+        text-shadow: 
+        0px 0px 15px black, /* Top-left outline */
+        0px 0px 15px black,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
+        animation: sloganAnimation 16s forwards  ease-in-out;
+        animation-iteration-count: 1; /* Play only once */
+
+    }
+    .sloganSpecial{
+        /* grid-area: slog; */
+        color: rgb(255, 215, 0);
+        z-index: 1;
+
+    }
+    .heroDetails{
+        margin-top: 3.5%;
+        grid-column: 18/span 20 ;
+        grid-row:7/ span 3;
+        font-family: 'hero_details_font', sans-serif;
+        color:white;
+        margin-top: 7%;
+        margin-bottom: 5%;
+        font-size: 1.2vw;
+        text-align: justify;            
+        z-index: 1;
+        text-shadow: 
+        0px 0px 2px black, /* Top-left outline */
+        0px 0px 2px black,  /* Top-right outline */
+        0px 0px 0px black,  /* Bottom-left outline */
+        0px 0px 0px black;   /* Bottom-right outline */
+        animation: visabilityAnimation 21s forwards  ease-in-out;
+        animation-iteration-count: 1; /* Play only once */
+    }
+
+    
+    /* ---------- first divider ------ */
+.firstDivider{
+    grid-column: 1/span 40;
+    grid-row: 14;
+    /* margin-top: 10%; */
+    position: relative;
+    background-image: url("../en pic/En_laptop first divider.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: content-box;
+    /* width: 100%;
+    height:100vhx; */
+    z-index:4;
+    /* background-color: black; */
+    object-fit: contain;
+    min-height: 15.2vw; 
+    
+    min-width: 100px; 
+    /* Set a minimum width so it’s visible */
+    align-self: center;
+    align-items: center;
+}
+
+/* --------- about ---------- */
+.about{
+    /* position: initial; */
+
+    /* margin-top: -10%; */
+    display: grid;
+    grid-template-columns: repeat(40,1fr);
+    overflow-x: hidden;
+    grid-template-rows: auto;
+    width: 100%; 
+    z-index: 10; 
+}
+ .aboutImage{
+    /* position: absolute; */
+
+    grid-column: 6/span 15;
+    grid-row: 1/span 6;
+    width: 100%;
+    /* height: 30vw; */
+    /* min-height: 55vh; */
+    background-image: url('../../image/about.webp');
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+
+    background-size: contain; /* Ensures the entire image is visible */
+
+
+ }
+
+ .yearsWork,.successRate,.satisfiedClients{
+    /* transform: translateX(43%); */
+    /* margin-left: -200px; */
+    margin: 4px;
+    display: flex;
+    font-family: statisticFont;
+    font-size:110%;
+    width:20%;
+    height:50px;
+    gap:4px;
+    align-items: center;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 
+    0px 0px 6px black, /* Top-left outline */
+    0px 0px 6px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+    background-position: center; /* Centers the image */
+    background-size: contain; /* Ensures the entire image is visible */
+ }
+
+ .yearsWork{
+    position: relative;
+
+    background-color: rgb(97, 97, 97);
+
+ }
+.yearsWork.visible{
+    animation: yearsWorkExAnim 4s forwards ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+    animation-delay: 1s;
+
+}
+
+ 
+ .yearsWork span:nth-child(1){
+    opacity: 0;
+
+    margin-left: 2px;
+    font-weight: bold;
+
+    color:white;
+
+    animation: txTAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+
+
+ }
+
+ .yearsWork span:nth-child(2){
+    opacity: 0;
+
+ }
+
+
+ .yearsWork span:nth-child(2).visible{
+    animation: numYearsWorkAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+ }
+
+ .successRate{
+    position: relative;
+
+
+    background-color: rgb(189, 189, 189);
+ }
+.successRate.visible{
+    animation: successRateAnim 4s forwards ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+    animation-delay: 2s;
+
+}
+
+
+ .successRate span:nth-child(1){
+    opacity: 0;
+
+    margin-left: 2px;;
+    font-weight: bold;
+    animation: txTAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+
+ }
+ .successRate span:nth-child(2){
+    opacity: 0;
+
+ }
+ .successRate span:nth-child(2).visible{
+    animation: numSuccessRateAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+ }
+
+
+.satisfiedClients{
+    position: relative;
+
+    background-color: rgb(255, 215, 0);
+    /* overflow: hidden; */
+    /* padding-right: 20px; */
+
+ }
+.satisfiedClients.visible{
+    animation: satisfiedClientsAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+
+}
+
+
+
+ .satisfiedClients span:nth-child(1){
+    opacity: 0;
+
+    margin-left: 2px;;
+    font-weight: bold;
+    animation: txTAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+
+ }
+ .satisfiedClients span:nth-child(2){
+    opacity: 0;
+    /* position:static; */
+    
+    /* transform: translateX(0); */
+
+ }
+
+
+ .satisfiedClients span:nth-child(2).visible{
+    animation: numSatisfiedClientsAnim 4s forwards ease-in-out;
+    animation-delay: 2s;
+
+
+ }
+
+
+ .yearsWork span,.successRate  span,.satisfiedClients  span{
+    /* gap:4px; */
+    color:black;
+
+
+
+
+ }
+/* - numbers statistics settings -  */
+ .yearsWork span:nth-child(2),.successRate  span:nth-child(2),.satisfiedClients  span:nth-child(2){
+    margin-left: 3%;
+    font-family: AddressFont;
+    font-size: 20px;
+    color:white;
+    /* -- text-shadow: offset-x offset-y blur-radius color; -- */
+    text-shadow: 
+
+        /* Inner glow outline */
+        0px 0px 3px black,
+        0px 0px 6px black,
+        
+        /* Middle glow outline */
+        0px 0px 9px black,
+        0px 0px 12px black,
+        
+        /* Outer glow outline */
+        0px 0px 15px black,
+        0px 0px 18px black;
+
+ }
+
+
+
+.aboutCompany{
+    color: white;
+    display:flex;
+    grid-column: 22/span 15;
+    grid-row: 1;
+    text-shadow: 
+    0px 0px 15px black, /* Top-left outline */
+    0px 0px 15px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+}
+
+ .aboutCompany span:nth-child(1){
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+
+    color: rgb(255, 215, 0);
+    transform: translateY(-20%);
+    font-size: 2.5vw;
+    font-family: sloganFont;
+    align-items: center;
+    text-align: center;
+
+
+}
+.aboutCompany span:nth-child(2){
+    
+    margin-left: 5%;
+    font-family: 'sloganFont', sans-serif;
+    color: rgb(255, 215, 0);
+    font-size: 1.4vw;
+    z-index: 1;
+}
+
+.aboutSlogan{
+    display:flex;
+    grid-column: 22/span 15; ;
+    grid-row: 2;
+    color: white;
+    font-family:'sloganFont' ;
+    font-size: 230%;;
+    /* text-align: justify; */
+    text-shadow: 
+    0px 0px 5px black, /* Top-left outline */
+    0px 0px 5px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+
+}
+
+.aboutTitleColor {
+    color: rgb(255, 215, 0);
+    text-shadow: 
+    0px 0px 15px black, /* Top-left outline */
+    0px 0px 15px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+
+}
+
+
+.aboutDetails{
+    grid-column: 22/span 15;;
+    grid-row: 3;
+    margin-top: 0%;
+    font-family: 'hero_details_font', sans-serif;
+    color:white;
+    display: flex;
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+
+}
+.aboutDetails p{
+
+    width: 100%;
+    direction: rtl;
+
+    text-align: justify;  
+    font-size: 100%;          
+}
+
+.aboutPros{
+    grid-column: 22/span 15;
+    grid-row: 4; 
+    display:flex;
+    flex-direction: column;
+    gap:9%;
+    font-family: 'hero_details_font', sans-serif;
+    font-size: 20px;
+    color:white;
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+
+}
+.aboutIcon{
+    width: 15px;
+}
+.aboutExperties{
+
+    align-items: center;
+    gap:5px;
+
+}
+
+
+
+.aboutAccurate{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.aboutQuality{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+
+.aboutEmergency{
+    grid-column: 29/span 11;
+    grid-row: 4 ;
+    display: flex;
+    flex-direction: column;
+    font-size:20px;
+    color:white;
+    font-family: 'hero_details_font', sans-serif;
+    gap:9%;
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+}
+
+
+.aboutEmergency span:nth-child(2){
+    font-family: AddressFont;
+    font-size: 1.6vw;
+
+}
+.aboutIcon2ndCol{
+    width: 3%;
+
+}
+
+
+
+ /* ------ portfolio ------ */
+ .portfolio{
+    display: grid;
+    grid-template-columns: repeat(40,1fr);
+    width:100%;
+    z-index: 5;
+ }
+
+ /* -- second divider -- */
+
+.secondDivider{
+    grid-column: 1/span 40;
+    grid-row: 1/span 10;
+    margin-top: 1%;
+    /* display: flex; */
+    /* background-position: 0% 0%; */
+    background-image: url("../en pic/En laptop second divider.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height:30vw ;
+    z-index: -2;
+}
+ .portfolioAllIntro{
+    margin-top: 4%;
+    grid-column: 13/span 16;
+    grid-row:2;    
+    flex-direction: column;
+    display: flex;
+    color:black;
+    text-shadow: 
+    0px 0px 2px rgb(255, 215, 0), /* Top-left outline */
+    0px 0px 2px rgb(255, 215, 0),  /* Top-right outline */
+    0px 0px 0px rgb(255, 215, 0),  /* Bottom-left outline */
+    0px 0px 0px rgb(255, 215, 0);   /* Bottom-right outline */ 
+ }
+
+ .portfolioIntro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:black;
+    text-shadow: 
+    0px 0px 2px rgb(255, 215, 0), /* Top-left outline */
+    0px 0px 2px rgb(255, 215, 0),  /* Top-right outline */
+    0px 0px 0px rgb(255, 215, 0),  /* Bottom-left outline */
+    0px 0px 0px rgb(255, 215, 0);   /* Bottom-right outline */
+    /* gap:2px; */
+    gap:10px;
+
+ }
+ .portfolioIntro span:nth-child(1){
+    font-family: 'sloganFont',sans-serif;
+    font-size: 1.4vw;
+    z-index: 1;
+    /* margin-top: -14px; */
+
+    /* gap:2px; */
+
+
+ }
+ .portfolioIntro span:nth-child(2){
+    transform: translateY(-10px);
+    font-family: dashFont;
+    color:black;
+    font-size: 30px;
+    /* margin-left:2%; */
+
+
+
+ }
+ .portfolioSlogan{
+    /* margin-top: -100%; */
+
+    text-align: center;
+    /* grid-column: 15 /span 10; */
+    /* grid-row:2; */
+    font-family:'sloganFont' ;
+    color:black;
+    font-size: 2vw;
+    text-shadow: 
+    0px 0px 10px rgb(255, 215, 0), /* Top-left outline */
+    0px 0px 10px rgb(255, 215, 0),  /* Top-right outline */
+    0px 0px 10px rgb(255, 215, 0),  /* Bottom-left outline*/
+    0px 0px 10px rgb(255, 215, 0);   /* Bottom-right */
+    opacity: 0;
+
+
+ }
+ .portfolioSlogan.visible{
+    animation: visabilityAnimation 3s forwards  ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+ }
+
+ /* -- 3rd third divider --  */
+ .thirdDivider{
+    grid-template-columns: 1/span 40;
+    grid-template-rows:auto;
+    background-image: url("../en pic/En laptop third divider.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:100% ;
+    height: 12vw;
+ }
+
+ /* ------ products ------ */
+ .products{
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: auto;
+    width:100%;
+    
+ }
+
+
+ /* -- product animation part -- */
+ .productIntro, .productTitle, .productDetails{
+    opacity: 0;
+ }
+ .productIntro.visible, .productTitle.visible, .productDetails.visible{
+    animation: visabilityAnimation 7s forwards  ease-in-out;
+    animation-iteration-count: 1; /* Play only once */
+ }
+ /*  */
+
+ .productIntro{
+    grid-column: 4/ span 5;
+    grid-row:1;
+    display: flex;
+     justify-content: cernter;
+    align-items: center;
+    gap:10px;
+
+    
+    color:rgb(255, 215, 0);
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+
+ }
+
+
+
+ .productIntro span:nth-child(1){
+
+
+    font-family: sloganFont;
+    font-size:1.4vw;
+
+
+ }
+ .productIntro span:nth-child(2){
+    transform: translateY(-11px);
+    font-family: dashFont;
+ }
+.productTitle{
+    grid-column: 4/ span 9;
+    grid-row: 2;
+    font-family:sloganFont ;
+    color:white;
+    font-size: 2vw;
+
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+
+}
+.productTitle span:nth-child(2){
+    color:rgb(255, 215, 0)
+}
+
+.productDetails{
+    grid-column: 4/ span 9;
+    grid-row:3;
+    color:white;
+    font-family: hero_details_font;
+    font-size: 0.9vw;
+
+    text-shadow: 
+    0px 0px 2px black, /* Top-left outline */
+    0px 0px 2px black,  /* Top-right outline */
+    0px 0px 0px black,  /* Bottom-left outline */
+    0px 0px 0px black;   /* Bottom-right outline */
+
+}
+
+.productsPhotos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    grid-column: 4/span 18;
+    grid-row:1/span 9;
+    /* background-size: 100%; */
+    /* height: 57vh; */
+    width:100%;
+
+}
+.firstPhoto{
+    position: relative;
+
+    background-image: url("../../image/product1.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures the entire image is visible */
+    background-position: center; /* Centers the image */
+    width: 100%;
+    min-height: 60vh; /* Increases the height of the container for larger images */
+
+    /* height: 100vh; */
+
+}
+.secondPhoto{
+    position: relative;
+
+    background-image: url("../../image/product2.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures the entire image is visible */
+    background-position: center; /* Centers the image */
+    width: 100%;
+    min-height: 60vh; /* Increases the height of the container for larger images */
+
+
+}
+.thirdPhoto{
+    position: relative;
+    background-image: url("../../image/product3.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures the entire image is visible */
+    background-position: center; /* Centers the image */
+    width: 100%;
+    min-height: 60vh; /* Increases the height of the container for larger images */
+
+    /* height: 100vh; */
+
+}
+.photoShape{
+    position: absolute;
+    bottom: 15%; /* Positions the text 5% from the bottom edge */
+    left:10%;
+
+    display: flex;
+    /* transform: translateY(1000%); */
+    /* align-self:end ;
+    justify-self: start; */
+    flex-direction: column;
+    /* transform: translate(10%,400%); */
+    color : black;
+    text-shadow: 
+    0px 0px 4px white, /* Top-left outline */
+    0px 0px 4px white,  /* Top-right outline */
+    0px 0px 0px white,  /* Bottom-left outline */
+    0px 0px 0px white;   /* Bottom-right outline */
+
+}
+
+.photoShape span:nth-child(1){
+    /* position: absolute;
+    top: -380%; */
+
+    font-family: normal_font_bold_2;
+    /* font-size:30px; */
+    font-size:200%;
+
+
+}
+.photoShape span:nth-child(2){
+    /* position: absolute;
+    top: 420px; */
+    font-family: normal_font_bold;
+    /* font-size:20px; */
+    font-size:100%;
+
+}
+
+.moveUpper{
+
+    position: fixed;
+    /* display: flex; */
+    right:-240px;
+    bottom: 40px;
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 3s ease, visibility 3s ease;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5); /* Background for testing */
+    border-radius: 50%;
+    z-index: 1000;
+
+}
+.moveUpper img{
+    width: 15%;
+    cursor: pointer;
+    object-fit: contain; /* Ensure the image fits properly */
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+.gap_line_last_line_product{
+    display:flex;
+    grid-column: 1/span 40;
+    grid-row: 10;
+    flex-direction: row;
+    margin-bottom: 30vh;
+}
+
+/* ---- visible part ----  */
+.yearsWork , .successRate , .satisfiedClients{
+    opacity:1;
+    visibility: visible;
+    display: inline;
+
+
+}
+
+  /* visability  part */
+  /* .lang,.footerLang{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+  .dividerLang{
+        opacity: 0;
+    
+  } */
